@@ -1,0 +1,832 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body{
+   margin: auto;
+   width: 600px;
+   height: 100vh;
+}
+
+#home{
+   display: flex;
+   flex-direction: column;
+   width: 600px;
+   /* height: 100vh; */
+   background: #011256;
+   align-items: center;
+   margin: auto;
+}
+
+#home strong{
+   color: rgb(255, 0, 255);
+   font-size: 6rem;
+   margin-top: 10%;
+}
+#home img{
+   margin-left:280px;
+   margin-top: -55px;
+}
+
+#home h3{
+   color: white;
+   font-size: 3rem;
+   margin-top: 30%;
+}
+
+#home h5{
+   color: greenyellow;
+   font-size: 1.5rem;
+}
+
+#playNow{
+   width: 300px;
+   height: 60px;
+   color: white;
+   background: #5848F6;
+   border: none;
+   border-radius: 30px;
+   margin-top: 10%;
+   font-size: 1.5rem;
+}
+
+#firstAbout{
+   width: 300px;
+   height: 60px;
+   color: #4B42E6;
+   background: #011256;
+   border: 3px solid #4B42E6;
+   border-radius: 30px;
+   margin-top: 10%;
+   /* font-size: 1rem; */
+}
+
+#about{
+   display: flex;
+   flex-direction: column;
+   width: 600px;
+   height: 100vh;
+   background: rgb(17, 1, 91);
+   align-items: center;
+   position: relative;
+   display: none;
+}
+
+#aboutBack{
+   position: absolute;
+   top: 20px;
+   left: 10px;
+   background:  rgb(17, 1, 91);
+   color: white;
+   width: 50px;
+   height: 20px;
+   border: none;
+}
+
+
+#aboutApp{
+   color: white;
+   font-size: 1.5rem;
+   text-align: center;
+   margin-top: 20%;
+}
+
+#aboutApp span, #difficultyAbout span{
+   color: yellowgreen;
+   font-weight: bold;
+}
+
+#difficulty{
+   display: flex;
+   flex-direction: column;
+   width: 600px;
+   /* height: 100vh; */
+   background: rgb(17, 1, 91);
+   align-items: center;
+   position: relative;
+   display: none;
+}
+
+#backOne{
+   position: absolute;
+   top: 20px;
+   left: 10px;
+   background:  rgb(17, 1, 91);
+   /* color: white; */
+   width: 50px;
+   height: 20px;
+   border: none;
+}
+
+#levelUp{
+   margin-top: 5%;
+   width: 200px;
+   height: 50px;
+   color: white;
+   background: #5848F6;
+   border: 3px solid rgb(47, 33, 255);
+   border-radius: 30px;
+   font-size: 1.5rem;
+}
+
+#difficulty p{
+   color: white;
+   font-size: 1.7rem;
+   text-align: center;
+   margin-bottom: 4px;
+   font-weight: bold;
+}
+
+#easyDiv{
+   /* width: 300px; */
+   height: 150px;
+   margin-top: 10%;
+}
+
+#easyDiv button {
+   width: 280px;
+   height: 60px;
+   color: white;
+   background: rgb(17, 1, 91);
+   border: 3px solid rgb(34, 20, 221);
+   border-radius: 30px;
+   font-size: 1.5rem;
+   box-shadow: 0px 0px 8px rgb(153, 127, 171);
+   margin-left: 10px;
+}
+
+#normalDiv{
+   /* width: 300px; */
+   height: 150px;
+   margin-top: 5%;
+}
+
+#normalDiv button {
+   width: 280px;
+   height: 60px;
+   color: white;
+   background: rgb(17, 1, 91);
+   border: 3px solid rgb(34, 20, 221);
+   border-radius: 30px;
+   font-size: 1.5rem;
+   box-shadow: 0px 0px 8px rgb(153, 127, 171);
+   margin-left: 10px;
+}
+
+#hardDiv{
+   /* width: 300px; */
+   height: 150px;
+   margin-top: 5%;
+}
+
+#hardDiv button {
+   width: 280px;
+   height: 60px;
+   color: white;
+   background: rgb(17, 1, 91);
+   border: 3px solid rgb(34, 20, 221);
+   border-radius: 30px;
+   font-size: 1.5rem;
+   box-shadow: 0px 0px 8px rgb(153, 127, 171);
+   margin-left: 10px;
+}
+
+#secondAbout{
+   width: 200px;
+   height: 50px;
+   color: white;
+   background: rgb(34, 20, 221);
+   border: 3px solid rgb(34, 20, 221);
+   border-radius: 30px;
+   font-size: 1.5rem;
+}
+
+#difficultyAbout{
+   display: flex;
+   flex-direction: column;
+   width: 600px;
+   height: 100vh;
+   background: rgb(17, 1, 91);
+   align-items: center;
+   position: relative;
+   display: none;
+}
+
+#difficultyAbout div{
+   color: white;
+   font-size: 1.5rem;
+   text-align: center;
+   margin-top: 15px;
+}
+
+#difficultyBack{
+   position: absolute;
+   top: 5px;
+   left: 10px;
+   background: rgb(17, 1, 91);
+   color: white;
+   width: 30px;
+   height: 20px;
+   border: none;
+}
+
+#easyExam, #normalExam, #hardExam{
+   display: flex;
+   flex-direction: column;
+   width: 600px;
+   /* height: 100vh; */
+   background: rgb(17, 1, 91);
+   align-items: center;
+   position: relative;
+   display: none;
+}
+
+#backTwo{
+   position: absolute;
+   top: 20px;
+   left: 10px;
+   background: rgb(17, 1, 91);
+   /* color: white; */
+   width: 50px;
+   height: 20px;
+   border: none;
+}
+
+#level, #normalLevel, #hardLevel{
+   color: white;
+   font-size: 2rem;
+   margin-top: 20px;
+}
+
+#question, #normalQuestion, #hardQuestion{
+   color: lightblue;
+   font-size: 2rem;
+   margin-top: 40px;
+   margin-bottom: 50px;
+   text-align: center;
+}
+
+#buttonA, #buttonB, #buttonC, #buttonD, #normalbuttonA, #normalbuttonB, #normalbuttonC, #normalbuttonD, 
+#hardbuttonA, #hardbuttonB, #hardbuttonC, #hardbuttonD{
+   color: white;
+   font-size: 2rem;
+   margin-bottom: 10px;
+   padding: 5px;
+   background: rgb(17, 1, 91);
+   border: none;
+}
+
+#commands{
+  margin-top: 60px;
+  align-items: center;
+}
+
+#easyNext, #normalNext, #hardNext{
+   width: 200px;
+   height: 50px;
+   color: white;
+   background: rgb(34, 20, 221);
+   border: 3px solid rgb(34, 20, 221);
+   border-radius: 30px;
+   font-size: 1.5rem;
+}
+
+#easySubmit, #normalSubmit, #hardSubmit{
+   width: 200px;
+   height: 50px;
+   color: white;
+   background: rgb(34, 20, 221);
+   border: 3px solid rgb(34, 20, 221);
+   border-radius: 30px;
+   margin-top: 10%;
+   font-size: 1.5rem;
+   display: none;
+}
+
+#easyResult, #normalResult, #hardResult{
+   display: flex;
+   flex-direction: column;
+   width: 600px;
+   /* height: 100vh; */
+   background: rgb(17, 1, 91);
+   align-items: center;
+   position: relative;
+   display: none;
+}
+
+#yourScore, #normalScore, #hardScore{
+   color: lightblue;
+   margin: 30%;
+   text-align: center;
+}
+
+#easyHome, #normalHome, #hardHome{
+   width: 200px;
+   height: 50px;
+   color: white;
+   background: #5848F6;
+   /* border: 3px solid lightgreen; */
+   border-radius: 30px;
+   margin-top: 10%;
+   font-size: 1.5rem;
+}
+
+@media (max-width:1024px) {
+   body{
+       width: 100vw;
+   }
+
+   #home{
+       width: 100vw;
+   }
+
+   #home h1{
+       font-size: 9rem;
+       margin-top: 20%;
+   }
+   
+   #home h3{
+       font-size: 5rem;
+   }
+   
+   #home h5{
+       font-size: 3rem;
+   }
+
+   #playNow{
+       width: 350px;
+       height: 70px;
+       font-size: 2rem;
+       font-weight: bold;
+   }
+   
+   #firstAbout{
+       width: 350px;
+       height: 70px;
+       font-size: 2rem;
+       font-weight: bold;
+   }
+
+   #about{
+       width: 100vw;
+       padding: 50px;
+   }
+
+   #aboutApp{
+       font-size: 2rem;
+   }
+
+   #aboutBack{
+       top: 20px;
+       left: 20px;
+       width: 70px;
+       height: 40px;
+       font-size: 30px;
+   }
+
+   #difficulty{
+       width: 100vw;
+   }
+
+   #backOne{
+       top: 20px;
+       left: 20px;
+       width: 70px;
+       height: 40px;
+       font-size: 30px;
+   }
+
+   #levelUp{
+       margin-top: 15%;
+       width: 300px;
+       height: 70px;
+       font-size: 3rem;
+   }
+
+   #difficulty p{
+       font-size: 2.5rem;
+       margin-bottom: 10px;
+   }
+
+   #easyDiv button, #normalDiv button, #hardDiv button {
+       width: 350px;
+       height: 80px;
+       border-radius: 40px;
+       font-size: 2.5rem;
+       font-weight: bold;
+   }
+
+   #secondAbout{
+       width: 350px;
+       height: 70px;
+       font-size: 2rem;
+       font-weight: bold;
+       margin-top: 150px;
+   }
+
+   #difficultyAbout{
+       width: 100vw;
+       padding: 60px;
+       padding-top: 170px;
+   }
+
+   #difficultyAbout p{
+       font-size: 2rem;
+       margin-bottom: 15px;
+   }
+
+   #difficultyBack{
+       top: 20px;
+       left: 20px;
+       width: 70px;
+       height: 40px;
+       font-size: 30px;
+   }
+
+   #easyExam, #normalExam, #hardExam{
+       width: 100vw;
+   }
+
+   #backTwo{
+       top: 20px;
+       left: 20px;
+       width: 70px;
+       height: 40px;
+       font-size: 30px;
+   }
+   
+   #level, #normalLevel, #hardLevel{
+       font-size: 4rem;
+       margin-top: 60px;
+   }
+
+   #question, #normalQuestion, #hardQuestion{
+       font-size: 4rem;
+       margin-top: 150px;
+       margin-bottom: 50px;
+   }
+   
+   #buttonA, #buttonB, #buttonC, #buttonD, #normalbuttonA, #normalbuttonB, #normalbuttonC, #normalbuttonD, 
+   #hardbuttonA, #hardbuttonB, #hardbuttonC, #hardbuttonD{
+       font-size: 4rem;
+       margin-bottom: 20px;
+   }
+
+   #commands{
+       margin-top: 150px;
+    }
+    
+    #easyNext, #normalNext, #hardNext{
+       width: 300px;
+       height: 80px;
+       border-radius: 40px;
+       font-size: 3rem;
+    }
+
+    #easySubmit, #normalSubmit, #hardSubmit{
+       width: 300px;
+       height: 80px;
+       border-radius: 40px;
+       margin-top: 10%;
+       font-size: 3rem;
+   }
+
+   #easyResult, #normalResult, #hardResult{
+       width: 100vw;
+   }
+
+   #yourScore, #normalScore, #hardScore{
+       font-size: 3.2rem;
+   }
+
+   #easyHome, #normalHome, #hardHome{
+       width: 300px;
+       height: 80px;
+       border-radius: 40px;
+       font-size: 2.5rem;
+   }
+}
+
+@media (max-width:820px){
+   #difficultyAbout p{
+       font-size: 1.5rem;
+       margin-bottom: 15px;
+   }
+
+   #easyExam, #normalExam, #hardExam{
+       padding-left: 10px;
+       padding-right: 10px;
+   }
+
+   #question, #normalQuestion, #hardQuestion{
+       margin-top: 80px;
+   }
+
+   #easySubmit, #normalSubmit, #hardSubmit{
+       margin-top: -5%;
+   }
+}
+
+@media (max-width:768px){
+   #home h1{
+       margin-top: 10%;
+   }
+
+   #levelUp{
+       margin-top: 10%;
+       width: 300px;
+       height: 70px;
+       font-size: 3rem;
+   }
+
+   #level, #normalLevel, #hardLevel{
+       font-size: 3.5rem;
+       margin-top: 60px;
+   }
+
+   #question, #normalQuestion, #hardQuestion{
+       font-size: 3rem;
+       margin-top: 100px;
+       margin-bottom: 50px;
+   }
+   
+   #buttonA, #buttonB, #buttonC, #buttonD, #normalbuttonA, #normalbuttonB, #normalbuttonC, #normalbuttonD, 
+   #hardbuttonA, #hardbuttonB, #hardbuttonC, #hardbuttonD{
+       font-size: 3rem;
+       margin-bottom: 20px;
+   }
+
+   #commands{
+       margin-top: 50px;
+    }
+
+    #difficultyAbout{
+       padding-top: 120px;
+   }
+}
+
+@media (max-width:430px){
+   #home h1{
+       font-size: 6rem;
+       margin-top: 20%;
+   }
+
+   #home h3{
+       font-size: 3.5rem;
+   }
+   
+   #home h5{
+       font-size: 2.5rem;
+   }
+
+   #playNow{
+       width: 300px;
+       height: 60px;
+       font-size: 2rem;
+       margin-top: 150px;
+   }
+   
+   #firstAbout{
+       width: 300px;
+       height: 60px;
+       font-size: 2rem;
+   }
+
+   #about{
+       width: 100vw;
+       padding: 20px;
+   }
+
+   #aboutApp{
+       font-size: 1.5rem;
+   }
+
+   #backOne{
+       top: 15px;
+   }
+
+   #levelUp{
+       margin-top: 15%;
+       width: 250px;
+       height: 60px;
+       font-size: 2.5rem;
+   }
+
+   #difficulty p{
+       font-size: 2.5rem;
+       margin-bottom: 10px;
+   }
+
+   #easyDiv button, #normalDiv button, #hardDiv button {
+       width: 300px;
+       height: 70px;
+       font-size: 2.2rem;
+   }
+
+   #secondAbout{
+       width: 300px;
+       height: 60px;
+       margin-top: 80px;
+   }
+
+   #difficultyAbout{
+       width: 100vw;
+       padding: 20px;
+       padding-top: 60px;
+   }
+
+   #difficultyAbout p{
+       font-size: 1rem;
+       margin-bottom: 12px;
+   }
+
+   #difficultyBack{
+       top: 15px;
+       height: 35px;
+       font-size: 20px;
+   }
+
+   #level, #normalLevel, #hardLevel{
+       font-size: 2.5rem;
+       margin-top: 40px;
+   }
+
+   #question, #normalQuestion, #hardQuestion{
+       font-size: 2rem;
+       margin-top: 60px;
+       margin-bottom: 30px;
+   }
+
+   #buttonA, #buttonB, #buttonC, #buttonD, #normalbuttonA, #normalbuttonB, #normalbuttonC, #normalbuttonD, 
+   #hardbuttonA, #hardbuttonB, #hardbuttonC, #hardbuttonD{
+       font-size: 2rem;
+   }
+
+   #easyNext, #normalNext, #hardNext{
+       width: 250px;
+       font-size: 2.5rem;
+    }
+
+    #easySubmit, #normalSubmit, #hardSubmit{
+       width: 250px;
+       margin-top: 5%;
+       font-size: 2.5rem;
+   }
+
+   #yourScore, #normalScore, #hardScore{
+       font-size: 2.5rem;
+   }
+
+   #easyHome, #normalHome, #hardHome{
+       width: 250px;
+       font-size: 2rem;
+   }
+}
+
+@media (max-width:375px){
+   #home h1{
+       font-size: 5rem;
+       margin-top: 20%;
+   }
+
+   #home h3{
+       font-size: 3rem;
+   }
+   
+   #home h5{
+       font-size: 2rem;
+   }
+
+   #playNow{
+       width: 250px;
+       height: 60px;
+       font-size: 2rem;
+       margin-top: 100px;
+   }
+   
+   #firstAbout{
+       width: 250px;
+       height: 60px;
+       font-size: 2rem;
+   }
+
+   #about{
+       padding: 25px;
+   }
+
+   #aboutApp{
+       font-size: 1.4rem;
+   }
+
+   #aboutBack{
+       top: 15px;
+       left: 15px;
+       width: 60px;
+       height: 30px;
+       font-size: 20px;
+   }
+
+   #backOne{
+       top: 15px;
+       left: 15px;
+       width: 60px;
+       height: 30px;
+       font-size: 20px;
+   }
+
+   #levelUp{
+       margin-top: 10%;
+       width: 180px;
+       height: 50px;
+       font-size: 2rem;
+   }
+
+   #difficulty p{
+       font-size: 2rem;
+       margin-bottom: 5px;
+   }
+
+   #easyDiv button, #normalDiv button, #hardDiv button {
+       width: 200px;
+       height: 60px;
+       font-size: 1.8rem;
+   }
+
+   #easyDiv, #normalDiv, #hardDiv{
+       margin-top: 15px;
+   }
+
+   #secondAbout{
+       width: 200px;
+       height: 60px;
+       margin-top: 10px;
+       font-size: 1.8rem;
+   }
+
+   #difficultyAbout{
+       width: 100vw;
+       padding: 20px;
+       padding-top: 40px;
+   }
+
+   #difficultyAbout p{
+       font-size: 0.9rem;
+       margin-bottom: 15px;
+   }
+
+   #difficultyBack{
+       top: 15px;
+       height: 25px;
+       font-size: 20px;
+   }
+
+   #backTwo{
+       top: 15px;
+       left: 15px;
+       width: 60px;
+       height: 30px;
+       font-size: 20px;
+   }
+
+   #level, #normalLevel, #hardLevel{
+       font-size: 2.5rem;
+       margin-top: 20px;
+   }
+
+   #question, #normalQuestion, #hardQuestion{
+       font-size: 1.85rem;
+       margin-top: 40px;
+       margin-bottom: 30px;
+   }
+
+   #buttonA, #buttonB, #buttonC, #buttonD, #normalbuttonA, #normalbuttonB, #normalbuttonC, #normalbuttonD, 
+   #hardbuttonA, #hardbuttonB, #hardbuttonC, #hardbuttonD{
+       font-size: 1.9rem;
+   }
+
+   #easyNext, #normalNext, #hardNext{
+       width: 200px;
+       height: 60px;
+       font-size: 2rem;
+       margin-top: -40px;
+    }
+
+    #easySubmit, #normalSubmit, #hardSubmit{
+       width: 200px;
+       height: 60px;
+       margin-top: 5%;
+       font-size: 2rem;
+   }
+
+   #yourScore, #normalScore, #hardScore{
+       font-size: 2rem;
+   }
+
+   #easyHome, #normalHome, #hardHome{
+       width: 200px;
+       height: 60px;
+       font-size: 1.8rem;
+   }
+}
